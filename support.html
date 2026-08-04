@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BPMN Master — Support</title>
+  <style>
+    :root {
+      /* The app's palette (RetroPalette), kept identical here. */
+      --cream: #f3e7d3;
+      --paper: #f8f1e3;
+      --rust: #b5410e;
+      --ink: #3b2314;
+      --muted: #8a6f58;
+      --divider: #dcc9ab;
+      color-scheme: light;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.65;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .logo img {
+      width: 132px;
+      height: 132px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      letter-spacing: -0.01em;
+      margin: 0 0 8px;
+    }
+
+    .top-text {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 40px;
+      font-size: 0.9rem;
+    }
+
+    .card {
+      background: var(--paper);
+      border-radius: 14px;
+      box-shadow: 0 1px 2px rgba(59, 35, 20, 0.07);
+      padding: 4px 22px 16px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: var(--rust);
+      margin: 16px 0 6px;
+    }
+
+    p {
+      margin: 8px 0;
+      font-size: 0.94rem;
+    }
+
+    a {
+      color: var(--rust);
+    }
+
+    .footer-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--divider);
+    }
+
+    @media (max-width: 480px) {
+      body {
+        margin: 24px auto;
+      }
+
+      .card {
+        padding: 4px 18px 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo"><img src="logo.png" alt="BPMN Master app icon" /></div>
+  <h1>BPMN Master — Support</h1>
+  <p class="top-text">
+    A native BPMN 2.0 diagram editor for iPhone, iPad and Mac.<br />
+    Answers to common questions are below.
+  </p>
+
+  <div class="card">
+    <h2>What is BPMN Master?</h2>
+    <p>
+      An editor for business process diagrams in the BPMN 2.0 notation published by the
+      Object Management Group. Everything you draw is saved as a standard
+      <strong>.bpmn</strong> file — plain XML that other BPMN tools can open. The app is
+      written natively for Apple platforms: there is no web view inside it, and it needs
+      no account and no internet connection.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How do I add and connect elements?</h2>
+    <p>
+      On Mac and iPad the shape palette is the panel on the left. On iPhone there is no
+      room for it, so tap the grid button in the toolbar to open it, choose a shape, then
+      tap Done.
+    </p>
+    <p>
+      Pick a shape in the palette, then tap or click the canvas to place it. If exactly
+      one element was selected beforehand, the new one is connected to it automatically
+      and becomes the new selection — so a whole chain is built by picking shapes and
+      tapping. To connect elements yourself, choose the <strong>Connect</strong> tool and
+      drag from one to the other; the app picks the correct kind of connection for you —
+      across two pools it becomes a message flow, to a text annotation an association, and
+      a sequence flow otherwise.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How do I select more than one element?</h2>
+    <p>
+      On Mac, Shift-click or Cmd-click to add to the selection, or drag from empty space
+      to draw a selection rectangle. On iPhone and iPad there is no Shift key, so
+      <strong>press and hold</strong> an element to add it to the selection; dragging from
+      empty space pans the canvas instead.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How do I reshape a connection or resize a container?</h2>
+    <p>
+      Select a connection and it shows handles: filled circles sit on its existing bend
+      points, hollow ones on the middle of each segment. Drag a filled one to move that
+      bend, drag a hollow one to create a new bend, and drag a bend onto its neighbour to
+      remove it. Points snap to a neighbour's axis, so right angles come out without
+      careful aiming. The endpoints can be dragged onto a different element to reconnect
+      the flow; dropped on empty space they snap back.
+    </p>
+    <p>
+      Pools, lanes, groups, expanded sub-processes and annotations show handles on every
+      corner and edge when selected. Dragging one keeps the opposite edge in place.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Where are undo and redo?</h2>
+    <p>
+      Undo is a button in the toolbar on every platform, and redo is beside it or in the
+      "…" menu, depending on how much room the toolbar has. With a keyboard, Cmd+Z and
+      Shift+Cmd+Z work as usual. Every edit is undoable, including automatic ones such as
+      the connection created together with a new element — that pair is undone in a single
+      step.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How do I export a diagram, or see its XML?</h2>
+    <p>
+      Open the <strong>"…"</strong> menu in the toolbar: it offers
+      <strong>Export as PNG</strong>, <strong>Export as PDF</strong>, and
+      <strong>Show XML</strong>, which displays the exact file contents as they will be
+      saved.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Where is Settings, and what is in it?</h2>
+    <p>
+      In the <strong>"…"</strong> toolbar menu on every platform; on Mac you can also use
+      Cmd+, or the BPMN Master menu. It holds the interface language, two switches for how
+      labels behave over lines, and one for connection re-routing.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Why did my flow label move off the line?</h2>
+    <p>
+      A connection's name is placed beside its line rather than on top of it, and slides to
+      the free side when a shape occupies the first choice. Where a label still has to
+      cross a line, the line is faded under the text instead of being cut, so the flow
+      stays traceable and the word stays readable.
+    </p>
+    <p>
+      Both halves are separate switches in Settings, under <strong>Labels over lines</strong>,
+      because they solve different problems: moving a label aside only rescues it from its
+      own line, while fading also covers a label that some other connection runs through.
+      Label positions already written into the file are left exactly as they are.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Can I stop connections from re-routing when I move an element?</h2>
+    <p>
+      Yes — turn off <strong>Re-route attached connections</strong> in Settings. By default,
+      moving an element recalculates the route of the connections attached to it. With the
+      switch off, only the attached point follows the element and the rest of the route you
+      drew is kept. A connection whose both ends move is carried along unchanged either way.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Where are my files stored?</h2>
+    <p>
+      Wherever you save them. BPMN Master is a standard document-based app, so it uses the
+      system file picker: Files on iPhone and iPad, Finder on Mac, including iCloud Drive
+      and any other provider you have connected. On iPhone and iPad, the app's own folder
+      is under <strong>Browse → On My iPhone (or iPad) → BPMN Master</strong>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>A file won't open: "no BPMNDiagram section with layout information"</h2>
+    <p>
+      A BPMN file can legally describe a process without saying where anything should be
+      drawn — the layout lives in a separate <strong>BPMNDiagram</strong> section. BPMN
+      Master does not invent a layout for such files, because a generated one would not be
+      what the author intended, so it explains the problem instead of guessing. Opening the
+      file in a tool that writes a layout and saving it there once is enough to make it
+      readable here.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Will my file still open in other BPMN tools?</h2>
+    <p>
+      Yes. The file is kept as a complete XML document and edited in place, never rewritten
+      from scratch. Vendor extensions from other editors (Camunda, Zeebe, Signavio) and
+      elements with no visual form survive a save untouched, even though this app does not
+      display them.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Can I change the language?</h2>
+    <p>
+      Yes. The app is available in English, German, French, Ukrainian, Spanish, Japanese and
+      Portuguese. By default it follows your device language (falling back to English); you
+      can change it any time in Settings, and it applies immediately without a restart.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Does it need an internet connection?</h2>
+    <p>
+      No. The app works entirely offline and makes no network requests at all.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>System requirements</h2>
+    <p>
+      iPhone or iPad with iOS or iPadOS 18 or later, or a Mac with macOS 15 or later.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Contact &amp; feedback</h2>
+    <p>
+      Didn't find your answer, found a file that renders wrongly, or want an element the app
+      doesn't support yet? Write to us — we read everything, and a sample .bpmn file attached
+      to your message helps enormously.<br />
+      <strong>Email:</strong>
+      <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>
+    </p>
+  </div>
+
+  <p class="footer-note">
+    Every process starts with a single start event.
+  </p>
+</body>
+
+</html>
