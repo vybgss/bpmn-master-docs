@@ -3,288 +3,345 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>BPMN Master — Support</title>
-  <style>
-    :root {
-      /* The app's palette (RetroPalette), kept identical here. */
-      --cream: #f3e7d3;
-      --paper: #f8f1e3;
-      --rust: #b5410e;
-      --ink: #3b2314;
-      --muted: #8a6f58;
-      --divider: #dcc9ab;
-      color-scheme: light;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif;
-      background: var(--cream);
-      color: var(--ink);
-      max-width: 720px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.65;
-      -webkit-text-size-adjust: 100%;
-    }
-
-    .logo {
-      text-align: center;
-      margin-bottom: 4px;
-    }
-
-    .logo img {
-      width: 132px;
-      height: 132px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 1.5rem;
-      letter-spacing: -0.01em;
-      margin: 0 0 8px;
-    }
-
-    .top-text {
-      text-align: center;
-      color: var(--muted);
-      margin-bottom: 40px;
-      font-size: 0.9rem;
-    }
-
-    .card {
-      background: var(--paper);
-      border-radius: 14px;
-      box-shadow: 0 1px 2px rgba(59, 35, 20, 0.07);
-      padding: 4px 22px 16px;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      font-size: 1rem;
-      color: var(--rust);
-      margin: 16px 0 6px;
-    }
-
-    p {
-      margin: 8px 0;
-      font-size: 0.94rem;
-    }
-
-    a {
-      color: var(--rust);
-    }
-
-    .footer-note {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.85rem;
-      margin-top: 40px;
-      padding-top: 24px;
-      border-top: 1px solid var(--divider);
-    }
-
-    @media (max-width: 480px) {
-      body {
-        margin: 24px auto;
-      }
-
-      .card {
-        padding: 4px 18px 14px;
-      }
-    }
-  </style>
+  <meta name="description" content="Answers to common questions about BPMN Master, the BPMN 2.0 editor for iPhone, iPad and Mac, and how to get in touch." />
+  <meta name="theme-color" content="#b4471a" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1c1814" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/site.css" />
 </head>
 
 <body>
-  <div class="logo"><img src="logo.png" alt="BPMN Master app icon" /></div>
-  <h1>BPMN Master — Support</h1>
-  <p class="top-text">
-    A native BPMN 2.0 diagram editor for iPhone, iPad and Mac.<br />
-    Answers to common questions are below.
-  </p>
+  <header class="bar">
+    <div class="bar-inner">
+      <a class="brand" href="marketing.html"><img src="assets/icon.png" alt="" /><span>BPMN Master</span></a>
+      <nav class="nav" aria-label="Site">
+        <a href="marketing.html">Overview</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="card">
-    <h2>What is BPMN Master?</h2>
-    <p>
-      An editor for business process diagrams in the BPMN 2.0 notation published by the
-      Object Management Group. Everything you draw is saved as a standard
-      <strong>.bpmn</strong> file — plain XML that other BPMN tools can open. The app is
-      written natively for Apple platforms: there is no web view inside it, and it needs
-      no account and no internet connection.
-    </p>
-  </div>
+  <main class="page">
+    <div class="pool">
+      <div class="pool-band" aria-hidden="true">Support</div>
+      <div class="pool-body">
+        <picture>
+          <source srcset="assets/icon-dark.png" media="(prefers-color-scheme: dark)" />
+          <img src="assets/icon.png" width="76" height="76" alt="BPMN Master app icon" />
+        </picture>
+        <div>
+          <h1>BPMN Master Support</h1>
+          <p>A native BPMN 2.0 diagram editor for iPhone, iPad and Mac. Answers to common
+            questions are below; if yours is not here, <a href="#contact">write to us</a>.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="card">
-    <h2>How do I add and connect elements?</h2>
-    <p>
-      On Mac and iPad the shape palette is the panel on the left. On iPhone there is no
-      room for it, so tap the grid button in the toolbar to open it, choose a shape, then
-      tap Done.
-    </p>
-    <p>
-      Pick a shape in the palette, then tap or click the canvas to place it. If exactly
-      one element was selected beforehand, the new one is connected to it automatically
-      and becomes the new selection — so a whole chain is built by picking shapes and
-      tapping. To connect elements yourself, choose the <strong>Connect</strong> tool and
-      drag from one to the other; the app picks the correct kind of connection for you —
-      across two pools it becomes a message flow, to a text annotation an association, and
-      a sequence flow otherwise.
-    </p>
-  </div>
+    <div class="card">
+      <ul class="toc">
+        <li><a href="#what">What is BPMN Master?</a></li>
+        <li><a href="#start">How do I start a diagram?</a></li>
+        <li><a href="#add">How do I add and connect elements?</a></li>
+        <li><a href="#properties">Where do I change an element's type?</a></li>
+        <li><a href="#select">How do I select several elements?</a></li>
+        <li><a href="#reshape">Reshaping connections and containers</a></li>
+        <li><a href="#keyboard">Keyboard shortcuts and the command palette</a></li>
+        <li><a href="#check">What does the diagram check look for?</a></li>
+        <li><a href="#export">Export, print and the XML source</a></li>
+        <li><a href="#settings">Settings and themes</a></li>
+        <li><a href="#files">Where are my files stored?</a></li>
+        <li><a href="#layout">A file opens with a generated layout</a></li>
+        <li><a href="#other-tools">Will my file still open in other BPMN tools?</a></li>
+        <li><a href="#requirements">System requirements</a></li>
+        <li><a href="#contact">Contact and feedback</a></li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h2>How do I select more than one element?</h2>
-    <p>
-      On Mac, Shift-click or Cmd-click to add to the selection, or drag from empty space
-      to draw a selection rectangle. On iPhone and iPad there is no Shift key, so
-      <strong>press and hold</strong> an element to add it to the selection; dragging from
-      empty space pans the canvas instead.
-    </p>
-  </div>
+    <h2 class="label">Getting started</h2>
 
-  <div class="card">
-    <h2>How do I reshape a connection or resize a container?</h2>
-    <p>
-      Select a connection and it shows handles: filled circles sit on its existing bend
-      points, hollow ones on the middle of each segment. Drag a filled one to move that
-      bend, drag a hollow one to create a new bend, and drag a bend onto its neighbour to
-      remove it. Points snap to a neighbour's axis, so right angles come out without
-      careful aiming. The endpoints can be dragged onto a different element to reconnect
-      the flow; dropped on empty space they snap back.
-    </p>
-    <p>
-      Pools, lanes, groups, expanded sub-processes and annotations show handles on every
-      corner and edge when selected. Dragging one keeps the opposite edge in place.
-    </p>
-  </div>
+    <div class="card" id="what">
+      <h3>What is BPMN Master?</h3>
+      <p>
+        An editor for business process diagrams in BPMN 2.0, the notation published by the
+        Object Management Group. Everything you draw is saved as a standard
+        <strong>.bpmn</strong> file — plain XML that other BPMN tools can open. The app is
+        written natively for Apple platforms: there is no web view inside it, and it needs
+        no account and no internet connection.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Where are undo and redo?</h2>
-    <p>
-      Undo is a button in the toolbar on every platform, and redo is beside it or in the
-      "…" menu, depending on how much room the toolbar has. With a keyboard, Cmd+Z and
-      Shift+Cmd+Z work as usual. Every edit is undoable, including automatic ones such as
-      the connection created together with a new element — that pair is undone in a single
-      step.
-    </p>
-  </div>
+    <div class="card" id="start">
+      <h3>How do I start a diagram?</h3>
+      <p>
+        Tap <strong>New diagram</strong> on the start screen on iPhone and iPad, or choose
+        File → New on Mac. A new diagram opens with its start event already selected, so the
+        first step is one tap away: press the “+” beside it and pick what comes next. To open
+        an existing file, choose it in the document browser, in Files, or in Finder.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>How do I export a diagram, or see its XML?</h2>
-    <p>
-      Open the <strong>"…"</strong> menu in the toolbar: it offers
-      <strong>Export as PNG</strong>, <strong>Export as PDF</strong>, and
-      <strong>Show XML</strong>, which displays the exact file contents as they will be
-      saved.
-    </p>
-  </div>
+    <div class="card" id="add">
+      <h3>How do I add and connect elements?</h3>
+      <p>
+        The <strong>Library</strong> holds every element, drawn in real BPMN notation, with a
+        search field on top. On Mac and iPad it is the panel on the left; on iPhone, open it
+        with the grid button at the end of the tool dock at the bottom of the screen.
+      </p>
+      <ul>
+        <li><strong>Tap an element</strong> in the library. If exactly one element is selected,
+          the new one is placed beside it, connected to it, and becomes the selection — so a
+          chain is built by tapping.</li>
+        <li><strong>Drag an element</strong> from the library or the dock onto the canvas to put
+          it exactly where you want. It joins the pool and lane it is dropped in, and is not
+          connected to anything.</li>
+        <li><strong>Use the “+”</strong> beside a selected element for the most common next steps,
+          or “…” for the rest of the library.</li>
+      </ul>
+      <p>
+        To connect two elements yourself, choose the <strong>Connect</strong> tool in the dock and
+        drag from one to the other. The app picks the right kind of connection: a message flow
+        between pools, an association to a text annotation, and a sequence flow otherwise.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Where is Settings, and what is in it?</h2>
-    <p>
-      In the <strong>"…"</strong> toolbar menu on every platform; on Mac you can also use
-      Cmd+, or the BPMN Master menu. It holds the interface language, two switches for how
-      labels behave over lines, and one for connection re-routing.
-    </p>
-  </div>
+    <h2 class="label">Editing</h2>
 
-  <div class="card">
-    <h2>Why did my flow label move off the line?</h2>
-    <p>
-      A connection's name is placed beside its line rather than on top of it, and slides to
-      the free side when a shape occupies the first choice. Where a label still has to
-      cross a line, the line is faded under the text instead of being cut, so the flow
-      stays traceable and the word stays readable.
-    </p>
-    <p>
-      Both halves are separate switches in Settings, under <strong>Labels over lines</strong>,
-      because they solve different problems: moving a label aside only rescues it from its
-      own line, while fading also covers a label that some other connection runs through.
-      Label positions already written into the file are left exactly as they are.
-    </p>
-  </div>
+    <div class="card" id="properties">
+      <h3>Where do I change an element's type, markers or name?</h3>
+      <p>
+        In <strong>Properties</strong>. On Mac and iPad it is the panel on the right; on iPhone,
+        select an element and tap the properties button in the small bar above it. There you
+        can rename the element, change its type or trigger, set loop, multi-instance and
+        compensation markers, mark a default flow or a condition, and write documentation.
+        To rename, double-click or double-tap the element, or press Return.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Can I stop connections from re-routing when I move an element?</h2>
-    <p>
-      Yes — turn off <strong>Re-route attached connections</strong> in Settings. By default,
-      moving an element recalculates the route of the connections attached to it. With the
-      switch off, only the attached point follows the element and the rest of the route you
-      drew is kept. A connection whose both ends move is carried along unchanged either way.
-    </p>
-  </div>
+    <div class="card" id="select">
+      <h3>How do I select several elements?</h3>
+      <p>
+        On Mac, Shift-click or Cmd-click to add to the selection, or drag from empty space to
+        draw a selection rectangle; <kbd>⌘</kbd><kbd>A</kbd> selects everything. On iPhone and
+        iPad there is no Shift key, so <strong>press and hold</strong> an element to add it to
+        the selection; dragging from empty space pans the canvas instead. With several elements
+        selected, Align and Distribute are in the “…” menu (and in the Arrange menu on Mac).
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Where are my files stored?</h2>
-    <p>
-      Wherever you save them. BPMN Master is a standard document-based app, so it uses the
-      system file picker: Files on iPhone and iPad, Finder on Mac, including iCloud Drive
-      and any other provider you have connected. On iPhone and iPad, the app's own folder
-      is under <strong>Browse → On My iPhone (or iPad) → BPMN Master</strong>.
-    </p>
-  </div>
+    <div class="card" id="reshape">
+      <h3>How do I reshape a connection or resize a pool?</h3>
+      <p>
+        Select a connection and it shows handles: filled circles on its bend points, hollow
+        ones on the middle of each segment. Drag a filled one to move that bend, drag a hollow
+        one to create a new bend, and drag a bend onto its neighbour to remove it. Points snap
+        to a neighbour's axis, so right angles come out without careful aiming. Drag an
+        endpoint onto another element to reconnect the flow.
+      </p>
+      <p>
+        Pools, lanes, groups, expanded sub-processes and annotations show handles on every
+        corner and edge when selected. Dragging one keeps the opposite edge in place; lanes
+        stay a tight stack, and the pool grows or shrinks to fit them.
+      </p>
+      <p>
+        Moving an element re-routes its connections, steering around shapes in the way. Both
+        can be changed in Settings → Editing: turn off <strong>Re-route attached
+        connections</strong> to keep the route you drew, and set <strong>Avoid
+        obstacles</strong> to Never, When creating or Always.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>A file won't open: "no BPMNDiagram section with layout information"</h2>
-    <p>
-      A BPMN file can legally describe a process without saying where anything should be
-      drawn — the layout lives in a separate <strong>BPMNDiagram</strong> section. BPMN
-      Master does not invent a layout for such files, because a generated one would not be
-      what the author intended, so it explains the problem instead of guessing. Opening the
-      file in a tool that writes a layout and saving it there once is enough to make it
-      readable here.
-    </p>
-  </div>
+    <div class="card" id="keyboard">
+      <h3>Are there keyboard shortcuts?</h3>
+      <p>
+        Yes, on Mac and on iPad with a keyboard. <kbd>⌘</kbd><kbd>K</kbd> opens the
+        <strong>command palette</strong>: one search field for every action, every element type
+        to add and every element of the diagram to jump to. <kbd>⌘</kbd><kbd>F</kbd> finds
+        elements by name, annotation text or ID.
+      </p>
+      <p>
+        Single letters pick tools (<kbd>V</kbd> select, <kbd>H</kbd> pan, <kbd>C</kbd> connect)
+        and add elements (<kbd>S</kbd> start event, <kbd>T</kbd> task, <kbd>G</kbd> exclusive
+        gateway, <kbd>E</kbd> end event and more). With one element selected, the new one is
+        connected to it, so typing <kbd>S</kbd> <kbd>T</kbd> <kbd>T</kbd> <kbd>G</kbd>
+        <kbd>E</kbd> sketches a whole flow. The full list is on the Keyboard page in Settings.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Will my file still open in other BPMN tools?</h2>
-    <p>
-      Yes. The file is kept as a complete XML document and edited in place, never rewritten
-      from scratch. Vendor extensions from other editors (Camunda, Zeebe, Signavio) and
-      elements with no visual form survive a save untouched, even though this app does not
-      display them.
-    </p>
-  </div>
+    <div class="card" id="undo">
+      <h3>Where are undo and redo?</h3>
+      <p>
+        Undo is a button in the toolbar on every device, and redo is beside it or in the
+        “…” menu, depending on how much room the toolbar has. With a keyboard,
+        <kbd>⌘</kbd><kbd>Z</kbd> and <kbd>⇧</kbd><kbd>⌘</kbd><kbd>Z</kbd> work as usual. Every
+        edit can be undone, including the connection created together with a new element —
+        that pair is undone in one step.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Can I change the language?</h2>
-    <p>
-      Yes. The app is available in English, German, French, Ukrainian, Spanish, Japanese and
-      Portuguese. By default it follows your device language (falling back to English); you
-      can change it any time in Settings, and it applies immediately without a restart.
-    </p>
-  </div>
+    <div class="card" id="check">
+      <h3>What does the diagram check look for?</h3>
+      <p>
+        The diagram is checked as you edit: start and end events with flows on the wrong side,
+        elements no start event reaches, flows that stop without an end event, gateways that
+        neither split nor merge, sequence flows across pools, boundary events not attached to
+        an activity, and references to elements that do not exist.
+      </p>
+      <p>
+        Errors get a red badge on the canvas and warnings an amber one. The badge at the top of
+        the canvas counts them; tap it for the list, and tap an entry to jump to the element.
+        Badges never appear in exports or printouts. To hide them, turn off <strong>Mark
+        problems on the canvas</strong> in Settings → Editing.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Does it need an internet connection?</h2>
-    <p>
-      No. The app works entirely offline and makes no network requests at all.
-    </p>
-  </div>
+    <div class="card" id="labels">
+      <h3>Why did my flow label move off the line?</h3>
+      <p>
+        A connection's name is placed beside its line rather than on top of it, and moves to
+        the free side when a shape is in the way. Where a label still has to cross a line, the
+        line is faded under the text instead of being cut, so both stay readable. Both are
+        switches in Settings → Canvas, under <strong>Labels over lines</strong>. Label
+        positions already written into the file are left exactly as they are.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>System requirements</h2>
-    <p>
-      iPhone or iPad with iOS or iPadOS 18 or later, or a Mac with macOS 15 or later.
-    </p>
-  </div>
+    <h2 class="label">Files and sharing</h2>
 
-  <div class="card">
-    <h2>Contact &amp; feedback</h2>
-    <p>
-      Didn't find your answer, found a file that renders wrongly, or want an element the app
-      doesn't support yet? Write to us — we read everything, and a sample .bpmn file attached
-      to your message helps enormously.<br />
-      <strong>Email:</strong>
-      <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>
-    </p>
-  </div>
+    <div class="card" id="export">
+      <h3>How do I export, print or see the XML?</h3>
+      <p>
+        On Mac, click the <strong>Export</strong> button (the square with an arrow) in the
+        toolbar; on iPhone and iPad, open <strong>Export</strong> in the <strong>“…”</strong>
+        menu. Both offer <strong>Export as PNG</strong>, <strong>Export as PDF</strong>,
+        <strong>Print</strong> and <strong>Show XML</strong>, which shows the file exactly as it
+        will be saved, with syntax highlighting and a Copy button. On Mac, Print is also in the
+        File menu (<kbd>⌘</kbd><kbd>P</kbd>). Exports and printouts always use the light paper
+        look, whichever theme you use on screen.
+      </p>
+      <p>
+        Copy and paste work with standard BPMN XML, so a fragment can be pasted into another
+        BPMN tool as text, and back again.
+      </p>
+    </div>
 
-  <p class="footer-note">
-    Every process starts with a single start event.
-  </p>
+    <div class="card" id="files">
+      <h3>Where are my files stored?</h3>
+      <p>
+        Wherever you save them. BPMN Master is a standard document-based app and uses the
+        system file browser: Files on iPhone and iPad, Finder on Mac, including iCloud Drive
+        and any other provider you have connected. On iPhone and iPad, the app's own folder is
+        under <strong>Browse → On My iPhone (or iPad) → BPMN Master</strong>.
+      </p>
+      <p>
+        On Mac, press Space on a .bpmn file in Finder to preview the diagram with Quick Look.
+      </p>
+    </div>
+
+    <div class="card" id="layout">
+      <h3>A file opened with a generated layout. Why?</h3>
+      <p>
+        A BPMN file can describe a process without saying where anything is drawn — the
+        layout lives in a separate <strong>BPMNDiagram</strong> section, and some engines and
+        scripts leave it out. BPMN Master opens such a file with a layout of its own: the flow
+        runs left to right from the start events, and pools and lanes are stacked as bands. A
+        note at the bottom of the canvas says the layout was generated; saving writes it into
+        the file. Sub-processes are shown collapsed in a generated layout; their content is
+        kept in the file.
+      </p>
+    </div>
+
+    <div class="card" id="other-tools">
+      <h3>Will my file still open in other BPMN tools?</h3>
+      <p>
+        Yes. The file is kept as a complete XML document and edited in place, never rewritten
+        from scratch. Vendor extensions from other editors (Camunda, Zeebe, Signavio) and
+        elements with no visual form survive a save untouched, even though this app does not
+        display them.
+      </p>
+    </div>
+
+    <h2 class="label">Settings</h2>
+
+    <div class="card" id="settings">
+      <h3>Where is Settings, and what is in it?</h3>
+      <p>
+        In the <strong>“…”</strong> toolbar menu on every device; on Mac you can also press
+        <kbd>⌘</kbd><kbd>,</kbd> or choose BPMN Master → Settings. It has five pages:
+      </p>
+      <ul>
+        <li><strong>General</strong> — appearance and interface language</li>
+        <li><strong>Canvas</strong> — dots or lines in the background, the minimap, labels over lines</li>
+        <li><strong>Editing</strong> — the “+” beside the selection, re-routing, avoiding obstacles, the diagram check</li>
+        <li><strong>Keyboard</strong> — every shortcut</li>
+        <li><strong>About</strong> — version, build and a link to the BPMN 2.0 specification</li>
+      </ul>
+    </div>
+
+    <div class="card" id="themes">
+      <h3>How do I change the theme?</h3>
+      <p>
+        In Settings → General → <strong>Appearance</strong>. <strong>Terracotta</strong>, the
+        default, uses the colours of the app icon; <strong>Light</strong> is the bright paper
+        look; <strong>Dark</strong> is espresso with cream lines. The change applies at once.
+        There is no automatic option: the three themes are not a day-and-night pair, so the
+        app keeps the one you choose.
+      </p>
+    </div>
+
+    <div class="card" id="language">
+      <h3>Can I change the language?</h3>
+      <p>
+        Yes. The app is available in English, German, French, Ukrainian, Spanish, Japanese and
+        Portuguese. By default it follows your device language, falling back to English; you
+        can change it in Settings → General, and it applies immediately without a restart.
+      </p>
+    </div>
+
+    <h2 class="label">About the app</h2>
+
+    <div class="card" id="offline">
+      <h3>Does it need an internet connection?</h3>
+      <p>
+        No. The app works entirely offline, makes no network requests and collects no data.
+        See the <a href="privacy-policy.html">Privacy Policy</a>.
+      </p>
+    </div>
+
+    <div class="card" id="requirements">
+      <h3>System requirements</h3>
+      <p>
+        iPhone with iOS 18 or later, iPad with iPadOS 18 or later, or a Mac with macOS 15 or
+        later.
+      </p>
+    </div>
+
+    <div class="card short" id="contact">
+      <h3>Contact and feedback</h3>
+      <p>
+        Didn't find your answer, found a file that renders wrongly, or missing an element?
+        Write to us — we read everything, and a sample .bpmn file attached to your message
+        helps enormously.
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:volodymyr.sichka@gmail.com?subject=BPMN%20Master%20support">volodymyr.sichka@gmail.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <nav aria-label="Footer">
+      <a href="marketing.html">Overview</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="https://apps.apple.com/app/id6797506214">App Store</a>
+    </nav>
+    <p class="motto">Every process starts with a single start event.</p>
+    <p>© 2026 Volodymyr Sichka</p>
+  </footer>
 </body>
 
 </html>

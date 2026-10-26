@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BPMN Master — BPMN 2.0 editor for iPhone, iPad and Mac</title>
+  <meta name="description"
+    content="BPMN Master is a native BPMN 2.0 diagram editor for iPhone, iPad and Mac. Open .bpmn files from other tools, edit them with touch, mouse or keyboard, and save them back intact." />
+  <meta name="theme-color" content="#b4471a" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1c1814" media="(prefers-color-scheme: dark)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BPMN Master — BPMN 2.0 on iPhone, iPad and Mac" />
+  <meta property="og:description"
+    content="A native BPMN 2.0 diagram editor. Open, draw and check process diagrams anywhere." />
+  <meta property="og:image" content="https://vybgss.github.io/bpmn-master-docs/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="apple-itunes-app" content="app-id=6797506214" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+
+<body>
+  <header class="bar">
+    <div class="bar-inner">
+      <a class="brand" href="marketing.html"><img src="assets/icon.png" alt="" /><span>BPMN Master</span></a>
+      <nav class="nav" aria-label="Site">
+        <a href="marketing.html" aria-current="page">Overview</a>
+        <a href="support.html">Support</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <!-- A flow from the app's start screen: start, task, gateway, end. -->
+        <svg class="flow" viewBox="0 0 228 64" role="img" aria-label="Start event, task, gateway and end event">
+          <rect x="1" y="1" width="226" height="62" rx="31" style="fill: var(--card); stroke: var(--hairline)" />
+          <circle cx="31" cy="32" r="13" class="shape-fill shape-ink" stroke-width="2.5" />
+          <line x1="46" y1="32" x2="58" y2="32" style="stroke: var(--muted)" stroke-width="2" />
+          <polygon points="58,28 64,32 58,36" style="fill: var(--muted)" />
+          <rect x="68" y="15" width="48" height="34" rx="7" class="shape-fill shape-ink" stroke-width="2.5" />
+          <line x1="120" y1="32" x2="130" y2="32" style="stroke: var(--muted)" stroke-width="2" />
+          <polygon points="130,28 136,32 130,36" style="fill: var(--muted)" />
+          <polygon points="154,16 170,32 154,48 138,32" class="shape-fill shape-accent" stroke-width="2.5"
+            stroke-linejoin="round" />
+          <path d="M148 26 L160 38 M160 26 L148 38" class="shape-accent" stroke-width="2.5" stroke-linecap="round" />
+          <line x1="173" y1="32" x2="183" y2="32" style="stroke: var(--muted)" stroke-width="2" />
+          <polygon points="183,28 189,32 183,36" style="fill: var(--muted)" />
+          <circle cx="203" cy="32" r="11.5" class="shape-fill shape-ink" stroke-width="4.5" />
+        </svg>
+
+        <p class="kicker">BPMN 2.0 editor</p>
+        <h1>Process diagrams, native on iPhone, iPad and Mac</h1>
+        <p class="lede">
+          Open .bpmn files from other modeling tools, edit them with touch, mouse or keyboard,
+          and save them back exactly as they were — plus your changes.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.apple.com/app/id6797506214">Get it on the App Store</a>
+          <a class="button ghost" href="support.html">How it works</a>
+        </div>
+        <p class="requires">For iOS 18, iPadOS 18 and macOS 15 or later</p>
+
+        <img class="devices" src="assets/img/hero-devices.webp" width="1800" height="1112"
+          alt="BPMN Master on iPad, MacBook, iPhone and iPhone Duo, each showing a process diagram in the Terracotta theme" />
+      </div>
+    </section>
+
+    <div class="wide">
+      <section class="feature">
+        <div class="feature-text">
+          <p class="label">Quick create</p>
+          <h2>Build a process tap by tap</h2>
+          <p>
+            Select a step and tap “+” beside it: the next task, gateway or end event arrives
+            already connected, placed clear of what is drawn there.
+          </p>
+          <ul class="gates">
+            <li>Tap an element in the library to add it after the selection</li>
+            <li>Or drag it onto the canvas, into the right pool and lane</li>
+            <li>With a keyboard, type <kbd>S</kbd> <kbd>T</kbd> <kbd>G</kbd> <kbd>E</kbd> to sketch a whole flow</li>
+          </ul>
+        </div>
+        <div class="feature-art">
+          <img class="phone" src="assets/img/phone-quickcreate.webp" width="640" height="1245" loading="lazy"
+            alt="iPhone showing a new task added after a gateway, with the quick create buttons beside it" />
+        </div>
+      </section>
+
+      <section class="feature flip">
+        <div class="feature-text">
+          <p class="label">Made for Mac</p>
+          <h2>Every action is a <kbd>⌘</kbd><kbd>K</kbd> away</h2>
+          <p>
+            One search field for every command, every element type and every step of your
+            diagram, ranked as you type.
+          </p>
+          <ul class="gates">
+            <li>Find elements by name, annotation text or ID with <kbd>⌘</kbd><kbd>F</kbd></li>
+            <li>Menus, keyboard shortcuts, printing and a minimap</li>
+            <li>Press Space on a .bpmn file in Finder to preview the diagram with Quick Look</li>
+          </ul>
+        </div>
+        <div class="feature-art">
+          <img class="laptop" src="assets/img/mac-palette.webp" width="1278" height="806" loading="lazy"
+            alt="MacBook showing the command palette over an order fulfillment diagram with two pools" />
+        </div>
+      </section>
+
+      <section class="feature">
+        <div class="feature-text">
+          <p class="label">Diagram check</p>
+          <h2>Catch mistakes as you draw</h2>
+          <p>
+            The diagram is checked while you edit, and problems are marked right on the
+            canvas. Tap one in the list to jump straight to it.
+          </p>
+          <ul class="gates">
+            <li>Missing flows, dead ends and steps no start event reaches</li>
+            <li>Gateways that neither split nor merge</li>
+            <li>Sequence flows across pools and detached boundary events</li>
+          </ul>
+        </div>
+        <div class="feature-art">
+          <img class="tablet" src="assets/img/ipad-check.webp" width="860" height="1102" loading="lazy"
+            alt="iPad showing an expense claim process with error and warning badges and the list of problems" />
+        </div>
+      </section>
+
+      <section class="feature flip">
+        <div class="feature-text">
+          <p class="label">Three themes</p>
+          <h2>Terracotta, Light or Dark</h2>
+          <p>
+            Terracotta takes its colours from the app icon: a terracotta bar, a warm clay
+            canvas and pools with dark name strips. Light is bright paper; Dark is espresso
+            with cream lines.
+          </p>
+          <ul class="gates">
+            <li>Switch at any time in Settings — it applies instantly</li>
+            <li>Exported images, PDFs and printouts always use the light paper look</li>
+          </ul>
+        </div>
+        <div class="feature-art">
+          <img class="phone" src="assets/img/phone-themes.webp" width="640" height="1245" loading="lazy"
+            alt="iPhone showing the same diagram split diagonally into the Terracotta, Light and Dark themes" />
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="label">Everything BPMN 2.0</p>
+          <h2>A real editor, not a viewer</h2>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <svg class="glyph" viewBox="0 0 34 34" aria-hidden="true">
+              <polygon points="17,3 31,17 17,31 3,17" class="shape-fill shape-accent" stroke-width="2.4"
+                stroke-linejoin="round" />
+              <path d="M12 12 L22 22 M22 12 L12 22" class="shape-accent" stroke-width="2.4" stroke-linecap="round" />
+            </svg>
+            <h3>The full notation</h3>
+            <p>Events with all 13 triggers, every task type and marker, all five gateways, pools
+              and lanes, sub-processes, data, annotations and groups.</p>
+          </div>
+          <div class="card">
+            <svg class="glyph" viewBox="0 0 34 34" aria-hidden="true">
+              <path d="M8 3 H21 L27 9 V31 H8 Z" class="shape-fill shape-ink" stroke-width="2.2"
+                stroke-linejoin="round" />
+              <path d="M21 3 V9 H27" fill="none" class="shape-ink" stroke-width="2.2" stroke-linejoin="round" />
+            </svg>
+            <h3>Your files stay intact</h3>
+            <p>The whole file is kept as written, so vendor extensions and everything other tools
+              rely on survive a save untouched.</p>
+          </div>
+          <div class="card">
+            <svg class="glyph" viewBox="0 0 34 34" aria-hidden="true">
+              <rect x="2" y="6" width="30" height="22" rx="1" class="shape-fill shape-ink" stroke-width="2.2" />
+              <rect x="2" y="6" width="7" height="22" style="fill: var(--ink)" />
+              <circle cx="15" cy="17" r="3" class="shape-fill shape-ink" stroke-width="1.8" />
+              <path d="M18 17 H25" class="shape-ink" stroke-width="1.8" />
+              <circle cx="27.5" cy="17" r="2.6" class="shape-fill shape-ink" stroke-width="2.4" />
+            </svg>
+            <h3>Files without a layout</h3>
+            <p>A process saved with no diagram opens with a generated layout instead of an error,
+              ready to tidy up and save.</p>
+          </div>
+          <div class="card">
+            <svg class="glyph" viewBox="0 0 34 34" aria-hidden="true">
+              <circle cx="17" cy="17" r="13" class="shape-fill shape-ink" stroke-width="3.6" />
+              <rect x="10.5" y="12" width="13" height="10" rx="1" class="shape-fill shape-ink" stroke-width="1.8" />
+              <path d="M10.5 12.5 L17 17.5 L23.5 12.5" fill="none" class="shape-ink" stroke-width="1.8"
+                stroke-linejoin="round" />
+            </svg>
+            <h3>Share and print</h3>
+            <p>Export to PNG and PDF, print scaled to the page, copy fragments as standard BPMN
+              and view the XML source.</p>
+          </div>
+          <div class="card">
+            <svg class="glyph" viewBox="0 0 34 34" aria-hidden="true">
+              <path d="M6 8 V26 C6 29.3 28 29.3 28 26 V8" class="shape-fill shape-ink" stroke-width="2.2" />
+              <ellipse cx="17" cy="8" rx="11" ry="3.6" class="shape-fill shape-ink" stroke-width="2.2" />
+              <path d="M6 13 C6 16.3 28 16.3 28 13" fill="none" class="shape-ink" stroke-width="1.8" />
+            </svg>
+            <h3>Private and offline</h3>
+            <p>No account, no tracking, no network. Diagrams are ordinary files in storage you
+              already use.</p>
+          </div>
+          <div class="card">
+            <svg class="glyph" viewBox="0 0 34 34" aria-hidden="true">
+              <path d="M12 4 H6 V30 H12" fill="none" class="shape-ink" stroke-width="2.2" />
+              <path d="M11 11 H29 M11 17 H26 M11 23 H22" class="shape-accent" stroke-width="2.2"
+                stroke-linecap="round" />
+            </svg>
+            <h3>Seven languages</h3>
+            <p>English, German, French, Ukrainian, Spanish, Japanese and Portuguese, switched
+              without a restart.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing">
+        <picture>
+          <source srcset="assets/icon-dark.png" media="(prefers-color-scheme: dark)" />
+          <img src="assets/icon.png" width="96" height="96" alt="BPMN Master app icon" />
+        </picture>
+        <h2>Start with a single start event</h2>
+        <p>One app for iPhone, iPad and Mac.</p>
+        <a class="button solid" href="https://apps.apple.com/app/id6797506214">Get it on the App Store</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <nav aria-label="Footer">
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:volodymyr.sichka@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 Volodymyr Sichka</p>
+  </footer>
+</body>
+
+</html>
